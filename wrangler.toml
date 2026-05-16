@@ -2,12 +2,12 @@ name = "r2file"
 main = "src/index.js"
 compatibility_date = "2025-08-16"
 
-# 启用workers.dev
+# 启用 workers.dev
 workers_dev = true
 
 # 绑定域名
 routes = [
-	{ pattern = "bashupload.app", custom_domain = true }
+    { pattern = "eeew.eu.org", custom_domain = true }
 ]
 
 # R2 存储桶绑定
@@ -20,7 +20,7 @@ bucket_name = "media"
 MAX_UPLOAD_SIZE = "53687091200"
 MAX_AGE = "86400"
 SHORT_URL_SERVICE = "https://suosuo.de/short"
-PASSWORD = "34553397zhu"
+PASSWORD = ""
 MAX_AGE_FOR_MULTIDOWNLOAD = "86400"
 NO_CLEANUP = "false"
 
@@ -34,9 +34,6 @@ run_worker_first = ["/*"]
 [observability.logs]
 enabled = true
 
-# 定时任务 - 每5分钟执行一次清理
+# 定时任务 - 每 5 分钟执行一次清理
 [triggers]
 crons = ["*/5 * * * *"]
-
-
-
